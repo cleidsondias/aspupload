@@ -1,10 +1,10 @@
 #upload-asp
 Está classe permite que seja possivel fazer upload de arquivos utilizando apenas script em ASP 3.0 (Classic).
 
-#Autor
+##Autor
 Copyright (c) 2015, Cleidson Dias do Nascimento
 
-#Configuração
+##Configuração
 Verifique se o servidor web IIS não restringe o tamanho de uploads ASP. Por exemplo: o IIS 6 (Windows Server 2003) tem um limite de 200 KB para solicitações ASP em uploads de arquivos gerais e, em particular. Para remover este limite em IIS existem diferentes instruções, dependendo da sua versão do IIS.
 
 * **Para o IIS 6:**
@@ -21,7 +21,7 @@ Enquanto ainda destacando o seu site, clique na aba "ASP", em seguida, expanda "
 Finalmente, abra uma janela de comando como um administrador e execute o comando "c:\windows\system32\inetsrv\appcmd set config -seção: requestFiltering -requestLimits.maxAllowedContentLength: 100000000". Isto diz IIS o maior valor que você pode fazer upload de, neste caso, é de 100MB. Você pode configurar o seu número em conformidade.
 ```
 
-#Instalação
+##Instalação
 Copie o arquivo upload.class.asp para um diretorio de sua preferencia e no arquivo que pretende utilizar adicione o importe nescessario. Ex:
 ```asp
 <!--#include virtual="{[[\][...][\]]}[\][pasta onde se encontra o recurso][\]upload.class.asp"-->
@@ -37,5 +37,5 @@ Para acessar o atributos oriundos da pagina HTML basta utilizar
 objUpload.FileItem("[Atributo INPUT FILE que se deseja acessar]")
 ```
 
-#COPYING / LICENSE
+##COPYING / LICENSE
 BSD 2-Clause license
